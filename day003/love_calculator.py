@@ -4,24 +4,27 @@ name2 = input('What is their name? ') # What is their name?
 # 🚨 Don't change the code above 👆
 # Write your code below this line 👇
 
-name = (name1 + name2).lower()
+name = name1 + name2
+name = name.lower()
+
 
 t = name.count('t')
 r = name.count('r')
-u = name.count('e')
+u = name.count('u')
 e = name.count('e')
+true_score = t + r + u + e
+
 l = name.count('l')
 o = name.count('o')
 v = name.count('v')
-
-true_score = t + r + u + e
+e = name.count('e')
 love_score = l + o + v + e
 
-total_score = int(str(true_score) + str(love_score))
+score = int(str(true_score) + str(love_score))
 
-if total_score < 10 or total_score > 90:
-  print(f"Your score is {total_score}, you go together like coke and.")
-elif 40 <= total_score and total_score <= 50:
-  print(f"Your score is {total_score}, you are alright together.")
+if score < 10 or score > 90:
+  print(f"Your score is {score}, you go together like coke and mentos.")
+elif score >= 40 and score <= 50:
+  print(f"Your score is {score}, you are alright together.")
 else:
-  print(f"Your score is {total_score}.")
+  print(f"Your score is {score}.")
