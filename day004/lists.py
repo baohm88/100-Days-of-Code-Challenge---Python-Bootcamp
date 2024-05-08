@@ -35,5 +35,15 @@ Return a shallow copy of the list. Equivalent to a[:].'''
 
 fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 print(fruits[1])
-fruits[2] = 'grape'
+print(fruits)
+print(fruits.count('apple'))
+print(fruits.count('tangerine'))
+print(fruits.index('banana'))
+print(fruits.index('banana', 4)) # Find next banana starting at position 4
+print(fruits.reverse())
+fruits.append('grape')
+print(fruits)
+fruits.sort()
+print(fruits)
+fruits.pop()
 print(fruits)
